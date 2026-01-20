@@ -70,9 +70,73 @@ border-radius:0.5rem ;
 background-color: rgba(255, 144, 14, 1);
 color: rgba(255, 255, 255, 1);
 }
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 24px;
+    padding-top: 85px;
+   
+}
+
+.our-features {
+    /* align-items এর বদলে text-align ব্যবহার করে দেখুন */
+    /* text-align: left; বা center আপনার প্রয়োজন অনুযায়ী */
+    max-width: 530px;
+    margin-left: 73px; /* এটি প্রয়োজন না হলে বাদ দিতে পারেন */
+    
+    /* যদি ফ্লেক্সবক্স দিয়ে মাঝখানে আনতে চান তবে নিচের ২ লাইন যোগ করুন */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-title{
+    font-size: 2.8rem;
+    font-weight:mixed;
+}
+
+#Quick-list{
+    font-size: 500;
+}
+
+.of-our{
+    color:#131313;
+}
+
+.Features{
+    color: #FF900E;
+}
+
+.feature-discription{
+    color: #727272;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
 @media screen and (max-width:576px) {
-    .navbar ,.nav-links{
+    .navbar ,
+    .nav-links ,
+    .teams{
         flex-direction: column;
     }
+
+    .team-img-container{
+        grid-template-columns:repeat(1 ,1fr) ;
+    }
     
+    .our-features{
+        margin-left: 1rem;
+    }
+}
+
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+     .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 1.2rem;
+    }
 }
