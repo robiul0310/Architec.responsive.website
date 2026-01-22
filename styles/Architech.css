@@ -116,6 +116,53 @@ color: rgba(255, 255, 255, 1);
     padding-bottom: 2rem;
 }
 
+.facts-container{
+    display: flex;
+    justify-content:center;
+    gap:160px;
+}
+
+.fact{
+    border: 1px solid #FF900E;
+    height: 240px;
+    width: 240px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 10px;
+}
+
+.fact-description{
+    max-width: 540px;
+}
+.sponsor-info{
+    max-width: 540px;
+    font-size: 16px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-companis{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+
+}
+/* kono coloring logo ba jekono kichu k gray korte chaile nicher filter ta use korle hobe */
+.sponsor-companis img{
+    filter: grayscale(100%);
+}
+
 @media screen and (max-width:576px) {
     .navbar ,
     .nav-links ,
@@ -123,9 +170,17 @@ color: rgba(255, 255, 255, 1);
         flex-direction: column;
     }
 
-    .team-img-container{
-        grid-template-columns:repeat(1 ,1fr) ;
+    .team-img-container, .facts-container 
+    {
+        
+        grid-template-columns:repeat 1fr ;
+        
     }
+     .facts-container{
+        justify-items: center;
+        gap: 24px;
+       /* flex-direction: column; */
+    }  
     
     .our-features{
         margin-left: 1rem;
