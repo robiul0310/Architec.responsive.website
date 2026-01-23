@@ -83,6 +83,31 @@ color: rgba(255, 255, 255, 1);
    
 }
 
+.features-title{
+    border-left: 5px solid #FF900E;
+    font-size: 80px;
+}
+
+.features{
+    gap: 100px;
+}
+
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px #0000001d;
+    margin-bottom: 20px;
+
+}
+
+.feature-card .feature-heading{
+    font-weight:600;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
 .our-features {
     /* align-items এর বদলে text-align ব্যবহার করে দেখুন */
     /* text-align: left; বা center আপনার প্রয়োজন অনুযায়ী */
@@ -195,5 +220,9 @@ color: rgba(255, 255, 255, 1);
     }
     .our-features{
         margin-left: 1.2rem;
+    }
+    .sponsor-companis{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
     }
 }
